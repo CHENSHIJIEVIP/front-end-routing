@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>泰康创新平台</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="viewport-fit=cover, width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/login.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/custom.css" />
+		<script src="script/lib/jquery/jquery-2.2.0.js"></script>
+	</head>
+	<body>
+		<!-- 全局Loading -->
+		<div class="global-loading-shadow disshow" id="global-loading-shadow">
+			<div class="global-loading"></div>
+		</div>
+		<!-- 全局遮罩层 -->
+		<div class="global-shadow disshow" id="global-shadow"></div>
+
+		<div class="mainviewport clearfix footer-hide" id="mainviewport">
+			<!-- 头部 -->
+			<div class="header header-hide" id="global-header">
+				<h1 class="logo-tit">
+					<a href="javascript:;" title="泰康人寿"></a>
+				</h1>
+				<!-- 头部导航 -->
+				<ul class="nav clearfix" id="global-header-list">
+
+				</ul>
+				<div class="rightbox">
+					<a href="javascript::">消息</a>
+					<a href="#">退出</a>
+				</div>
+			</div>
+			<!-- 内容容器 -->
+			<div class="main">
+				<!-- 左侧菜单 -->
+				<ul class="sidebar disshow" id="life_menu"></ul>
+				<div class="content" id="global-content"></div>
+			</div>
+			<!-- 底部 -->
+			<div class="footer" id="global-footer">
+
+			</div>
+		</div>
+	</body>
+	<script src="script/config/env.config.js"></script>
+	<script src="script/config/menu.config.js"></script>
+	<script src="script/app/app.js"></script>
+	<script src="script/app/tk.js"></script>
+	<script src="script/index.js"></script>
+</html>

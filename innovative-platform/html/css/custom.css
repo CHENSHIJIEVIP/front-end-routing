@@ -1,0 +1,14 @@
+/**
+*  自定义:公共样式&组件
+*/
+/* control */
+.show {
+    display:block;
+}
+.hide {
+    display:none;
+}
+/* margin */
+.mgl25 {
+    margin-left:25px;
+}

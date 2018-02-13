@@ -1,0 +1,329 @@
+/**
+*   通用样式或者是框架页(index.html)元素的样式
+*/
+
+/*  清除标签默认值   */
+html {
+	font-family:"微软雅黑",Helvetica,Arial,Tahoma,sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    font-family:"微软雅黑",Helvetica,Arial,Tahoma,sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    box-sizing:border-box;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+    display: block;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+audio, canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+th {
+    text-align: inherit
+}
+
+fieldset, img {
+    border: 0
+}
+
+iframe {
+    display: block
+}
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal
+}
+
+del {
+    text-decoration: line-through
+}
+
+address, caption, cite, code, dfn, em, th, var, i, b {
+    font-style: normal;
+    font-weight: 500;
+}
+
+ol, ul {
+    list-style: none
+}
+
+h1, h2, h3, h4, h5, h6, b {
+    font-size: inherit;
+    font-weight: 600
+}
+
+q:before, q:after {
+    content: ''
+}
+
+a{ 
+  color:#fff;
+  text-decoration: none;
+}
+a:hover{ 
+  color:#333;
+  text-decoration: none;
+}
+
+html {
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: #f4f5f7;
+}
+
+input, select, textarea {
+    font-size: 100%;
+    font-family:"微软雅黑",Helvetica,Arial,Tahoma,sans-serif;
+}
+
+ins, a {
+    text-decoration: none
+}
+input, textarea{
+    color: #000;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+input {
+    background:no-repeat 0 0 scroll #EEEEEE;
+    border:none;
+    outline:medium; /* 在浏览器下面，点击input输入时，会有边框，只要在样式中应用：outline:medium;即可去掉边框。 */ 
+    padding:0; /*input默认有上下padding*/
+}
+
+/* 隐藏滚动条 */
+@media screen and (max-width:1024px) {
+    /* 隐藏滚动条 */
+    ::-webkit-scrollbar{
+        width:0;
+    }
+    .bgcf::-webkit-scrollbar{
+        width:10px;
+        height: 10px;
+    }
+    .bgcf::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        background-color: #bbb;
+    }
+    .bgcf::-webkit-scrollbar-track
+    {
+        background-color: #fff;
+    }
+}
+
+input:not([type="checkbox"]), select, textarea { outline: none; border: none; -webkit-appearance: none; }
+
+.nopadding{
+    padding:0;
+}
+
+.form-control[disabled],.form-control.disabled,input[disabled],.form-control[readonly],input[readonly],.selectpicker.disabled,.input_nobg.disabled{
+	background:#E4E4E4;
+	border:1px solid  #e0e0e0;
+    opacity: 1;
+    color:#9A9A9A;
+}
+
+/*清除浮动*/
+.clearfix:after {
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	content: " ";
+}
+.row_0{
+	margin: 0!important;
+	padding:0;
+}
+.fr {
+	float: right;
+}
+.fl {
+	float: left;
+}
+.disshow{
+	display: none;
+}
+/*  清除标签默认值结束  */
+/*公共样式ＥＮＤ*/
+
+html,body,.mainviewport{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.mainviewport>.header{
+    position: fixed;
+    box-sizing: border-box;
+    top:0;
+    left:0;
+    width:100%;
+    height:60px;
+    z-index: 1000;
+    background: red;
+}
+.mainviewport>.header .logo-tit {
+	display:inline-block;
+	width: 160px;
+    height: 60px;
+	background: url(../resources/img/logo.png) no-repeat 12px 14px;
+}
+.mainviewport>.header .nav {
+	display: inline-block;
+	height: 60px;
+	margin-left: 80px;
+}
+
+.mainviewport>.header .nav-children {
+	height: 30px;
+    font-size: 16px;
+	text-align: center;
+	margin: 27px 50px 0 0;
+}
+
+.mainviewport>.header .nav li:last-child {
+	margin-right: 0;
+}
+.mainviewport>.nav-children .nav-name {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	color: #333;
+}
+
+.mainviewport>.header .nav-children.on .nav-name {
+	/*color: blue;*/
+}
+
+.mainviewport>.header .nav-children:hover .nav-name {
+	color: blue;
+}
+
+.mainviewport>.main{
+    box-sizing: border-box;
+    width:100%;
+    height:100%;
+    padding:8px 0 0;
+    overflow: auto;
+    background-color: #f8f8f8;
+    padding:60px 0 0;
+}
+.mainviewport>.main .content{
+    /*position: relative;*/
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+}
+.mainviewport>.footer{
+    position: fixed;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px;
+    transition:bottom .15s linear;
+    background-color: chartreuse;
+}
+.mainviewport.header-hide>.header{
+    top:-60px;
+}
+.mainviewport.footer-hide>.footer{
+    bottom:-6px;
+    display:none;
+}
+
+.global-shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2000;
+    top:0;
+    left: 0;
+}
+
+.global-loading-shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 8000;
+    top: 0;
+    left: 0;
+}
+
+.global-loading{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    margin-left:-64px;
+    margin-top: -64px;
+    top: 50%;
+    left: 50%;
+    z-index: 8001;
+    text-align: center;
+    border-radius: 5px;
+    background:url(../resources/img/timg.gif) no-repeat;
+}
+.sidebar {
+	width: 240px;
+	background: #fff;
+	/* position: absolute;
+    left: 0;
+    top: 0; */
+	height: 100%;
+    float: left;
+}
+
+.sidebar a{
+    color: #7d7d7d;
+}
+
+/* 导航样式 */
+.active{
+    color: blue !important;
+}
+
+.mainviewport>.header .rightbox{
+    display: inline-block;
+    height: 60px;
+    float: right;
+    line-height: 60px;
+    margin-right: 100px;
+}
+
+.mainviewport>.header .rightbox a{
+    margin-left: 30px;
+}

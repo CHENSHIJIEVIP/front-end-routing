@@ -1,0 +1,3 @@
+$(function() {
+  $('#sliderImg').slider();
+});
